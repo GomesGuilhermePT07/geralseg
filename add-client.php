@@ -32,7 +32,7 @@
 </head>
 <body>
     <p class="add-client-db">Adicionar cliente à base de dados</p>
-    <form method="POST" action="./assets/php/captar_cliente.php" class="inputs-form">
+    <form method="POST" action="assets/php/captar_cliente.php" class="inputs-form">
         <input type="text" id="cliente" name="cliente" class="inputs" placeholder="Cliente" required>
         <input type="text" id="ref" name="ref" class="inputs" placeholder="Referência" required>
         <input type="text" id="nome" name="nome" class="inputs" placeholder="Nome" required>
