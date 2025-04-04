@@ -11,7 +11,7 @@
     <title>GG | Adicionar Cliente</title>
 </head>
 <body>
-    <form action="./assets/php/captar_cliente">
+    <form action="./assets/php/captar_cliente" class="inputs-form">
         <label for="nome">Cliente:</label>
         <input type="text" id="cliente" name="cliente" class="inputs" required>
         <label for="nome">Referência:</label>
