@@ -11,7 +11,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         'nome' => filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING),
         'localidade' => filter_input(INPUT_POST, 'localidade', FILTER_SANITIZE_STRING),
         'valor_proposta' => filter_input(INPUT_POST, 'proposta', FILTER_VALIDATE_INT),
-        'sistema' => filter_input(INPUT_POST, 'sistema', FILTER_SANITIZE_STRING)
+        'sistema' => filter_input(INPUT_POST, 'sistema', FILTER_SANITIZE_STRING),
+        'estado' => filter_input(INPUT_POST, 'estado', FILTER_SANITIZE_STRING),
     ];
 
     // Verificar dados obrigatórios
@@ -21,8 +22,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     try{
-        $sql = "INSERT INTO propostas (referencias, cliente, nome, localidade, valor_proposta, sistema)
-                VALUES (:ref, :cliente, :nome, :localidade, :valor_proposta, :sistema)";
+        $sql = "INSERT INTO propostas (referencias, cliente, nome, localidade, valor_proposta, sistema, estado)
+                VALUES (:ref, :cliente, :nome, :localidade, :valor_proposta, :sistema, :estado)";
 
         $stmt = $pdo->prepare($sql);
         $stmt->execute($dados);
