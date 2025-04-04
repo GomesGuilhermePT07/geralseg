@@ -8,6 +8,7 @@
     --color-black: #000;
     --color-white: #fff;
     --color-green: #00ff00;
+    --color-dark-green: #009400;
     --color-red: #ff0000;
 }
 
@@ -35,9 +36,19 @@
 
 .add-btn{
     text-decoration: none;
-    background-color: red; /* VERMELHO PARA TESTES */
+    background-color: var(--color-green);
     border: none;
     padding: 12px;
     font-size: 18px;
     border-radius: 10px;
 }
+
+.add-btn:hover{
+    background-color: var(--color-dark-green);
+    transition: .3s;
+}
+
+.add-btn:not(:hover){
+    background-color: var(--color-green);
+    transition: .3s;
+} 
