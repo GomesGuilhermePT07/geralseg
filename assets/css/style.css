@@ -4,7 +4,7 @@
 
 :root{
     --primary-color: #333;
-    --secondary-color: #666;
+    --secondary-color: #b4b4b4;
     --color-black: #000;
     --color-white: #fff;
     --color-green: #00ff00;
@@ -28,7 +28,7 @@
 
 .inputs{
     border: none; 
-    background-color: red;  
+    background-color: var(--secondary-color);  
     padding: 12px;
     border-radius: 10px;
 }
