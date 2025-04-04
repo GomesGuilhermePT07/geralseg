@@ -2,10 +2,20 @@
     background-color: red;
 } */
 
+:root{
+    --primary-color: #333;
+    --secondary-color: #666;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-green: #00ff00;
+    --color-red: #ff0000;
+}
+
 .add-client-db{
     background-color: red; /* VERMELHO PARA TESTES */
     padding: 12px;
     font-size: 2rem;
+    border-radius: 10px;
 }
 
 .inputs-form{
@@ -14,4 +24,20 @@
     gap: 18px;
     padding: 8rem;
     padding-top: 8px;
+}
+
+.inputs{
+    border: none; 
+    /* background-color: red; VERMELHO PARA TESTES */
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.add-btn{
+    text-decoration: none;
+    background-color: red; /* VERMELHO PARA TESTES */
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 10px;
 }
