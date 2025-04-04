@@ -39,7 +39,14 @@
         <input type="text" id="localidade" name="localidade" class="inputs" placeholder="Localidade" required>
         <input type="number" id="proposta" name="proposta" class="inputs" placeholder="Valor da proposta" required>
         <input type="text" id="sistema" name="sistema" class="inputs" placeholder="Sistema" required>
-
+        <div class="dropbox">
+            <select name="dropbox" id="dropbox">
+                <option value="adjudicado">Adjudicado</option>
+                <option value="perdido">Perdido</option>
+                <option value="anulado">Anulado</option>
+                <option value="subtituida">Substituída</option>
+            </select>
+        </div>    
         <button type="submit" class="add-btn">Adicionar cliente</button>
     </form>
 </body>
