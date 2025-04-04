@@ -12,16 +12,11 @@
 </head>
 <body>
     <form action="./assets/php/captar_cliente" class="inputs-form">
-        <label for="nome">Cliente:</label>
-        <input type="text" id="cliente" name="cliente" class="inputs" required>
-        <label for="nome">Referência:</label>
-        <input type="text" id="ref" name="ref" class="inputs" required>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" class="inputs" required>
-        <label for="nome">Valor da proposta:</label>
-        <input type="number" id="proposta" name="proposta" class="inputs" required>
-        <label for="nome">Sistema:</label>
-        <input type="text" id="sistema" name="sistema" class="inputs" required>
+        <input type="text" id="cliente" name="cliente" class="inputs" placeholder="Cliente" required>
+        <input type="text" id="ref" name="ref" class="inputs" placeholder="Referência" required>
+        <input type="text" id="nome" name="nome" class="inputs" placeholder="Nome" required>
+        <input type="number" id="proposta" name="proposta" class="inputs" placeholder="Valor da proposta" required>
+        <input type="text" id="sistema" name="sistema" class="inputs" placeholder="Sistema" required>
     </form>
 </body>
 </html>
