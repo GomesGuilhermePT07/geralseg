@@ -15,8 +15,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         'estado' => filter_input(INPUT_POST, 'estado', FILTER_SANITIZE_STRING),
     ];
 
+    // Validação reforçada
+    $estadosValidos = ['adjudicado', 'perdido', 'anulado', 'substituído'];
+
     // Verificar dados obrigatórios
-    if (in_array(null, $dados, true)) {
+    if (in_array(null, $dados, true) || !in_array($dados['estado'], $estadosValidos) || $dados['valor_proposta'] === false) {
         header("Location: ../../add-client.php?status=error");
         exit();
     }
