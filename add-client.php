@@ -1,6 +1,22 @@
-<?php 
+<?php if(isset($_GET['status'])): ?>
+    <div class="status-message <?= htmlspecialchars($_GET['status']) ?>">
+        <?php
+        
+            switch($_GET['status']) {
+                case 'success':
+                    echo "✅ Cliente adicionado com sucesso!";
+                    break;
+                case 'duplicate':
+                    echo "⛔ Referência já existe!";
+                    break;
+                case 'error':
+                    echo "❌ Erro ao adicionar cliente";
+                    break;
+            }
 
-?>
+        ?>
+    </div>
+<?php endif; ?>
 
 <!DOCTYPE html>
 <html lang="pt-PT">
