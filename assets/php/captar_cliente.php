@@ -16,7 +16,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     ];
 
     // Validação reforçada
-    $estadosValidos = ['adjudicado', 'perdido', 'anulado', 'substituído'];
+    $estadosValidos = ['adjudicado', 'perdido', 'anulado', 'substituido'];
 
     // Verificar dados obrigatórios
     if (in_array(null, $dados, true) || !in_array($dados['estado'], $estadosValidos) || $dados['valor_proposta'] === false) {

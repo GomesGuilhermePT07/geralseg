@@ -45,7 +45,7 @@
                 <option value="adjudicado">Adjudicado</option>
                 <option value="perdido">Perdido</option>
                 <option value="anulado">Anulado</option>
-                <option value="substituído">Substituída</option>
+                <option value="substituido">Substituído</option>
             </select>
         </div>    
         <button type="submit" class="add-btn">Adicionar cliente</button>
