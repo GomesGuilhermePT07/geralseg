@@ -97,3 +97,104 @@ select.inputs:invalid {
     border: 1px solid #ebccd1;
     color: #a94442;
 }
+
+/* Estilos para a tabela de propostas */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.propostas-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.propostas-table thead tr {
+    background-color: var(--color-dark-green);
+    color: #ffffff;
+    text-align: left;
+}
+
+.propostas-table th,
+.propostas-table td {
+    padding: 12px 15px;
+    white-space: nowrap;
+}
+
+.propostas-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.propostas-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.propostas-table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--color-dark-green);
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Cores para os diferentes estados */
+.status-badge.adjudicado {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-badge.perdido {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.status-badge.anulado {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-badge.substituído {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+.no-results {
+    text-align: center;
+    color: var(--secondary-color);
+    padding: 20px;
+}
+
+.error-msg {
+    color: var(--color-red);
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .propostas-table {
+        font-size: 14px;
+    }
+    
+    .propostas-table th,
+    .propostas-table td {
+        padding: 8px 10px;
+    }
+}
