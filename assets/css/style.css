@@ -28,7 +28,7 @@
 
 .inputs{
     border: none; 
-    /* background-color: red; VERMELHO PARA TESTES */
+    background-color: red;  
     padding: 12px;
     border-radius: 10px;
 }
