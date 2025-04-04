@@ -1,6 +1,6 @@
-/* body{
-    background-color: red;
-} */
+*{
+    font-family: 'Gill Sans MT';
+}
 
 :root{
     --primary-color: #333;
@@ -13,7 +13,7 @@
 }
 
 .add-client-db{
-    background-color: red; /* VERMELHO PARA TESTES */
+    color: var(--primary-color); 
     padding: 12px;
     font-size: 2rem;
     border-radius: 10px;
