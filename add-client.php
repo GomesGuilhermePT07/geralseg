@@ -1,3 +1,7 @@
+<?php
+    include '/assets/php/config.php';
+?>
+
 <?php if(isset($_GET['status'])): ?>
     <div class="status-message <?= htmlspecialchars($_GET['status']) ?>">
         <?php
