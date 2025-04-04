@@ -11,8 +11,9 @@
     <title>GG | Geralseg</title>
 </head>
 <body>
-    <div class="add-client">
+    <div class="links">
         <a href="add-client.php">Adicionar Cliente</a>
+        <a href="mostrar-propostas.php">Mostrar Propostas</a>
     </div>
 </body>
 </html>
