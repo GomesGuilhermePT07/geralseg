@@ -10,6 +10,11 @@
     <title>GG | Geralseg</title>
 </head>
 <body>
-    
+    <div class="add-client">
+        <a href="add-client.php">Adicionar Cliente</a>
+    </div>
+    <div class="inputs">
+        
+    </div>
 </body>
 </html>
