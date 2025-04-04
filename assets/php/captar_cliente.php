@@ -16,7 +16,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Verificar dados obrigatórios
     if (in_array(null, $dados, true)) {
-        header("Location: ../../../add-client.php?status=error");
+        header("Location: ../../add-client.php?status=error");
         exit();
     }
 
@@ -27,19 +27,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt = $pdo->prepare($sql);
         $stmt->execute($dados);
 
-        header("Location: ../../../add-client.php?status=success");
+        header("Location: ../../add-client.php?status=success");
         exit();
     } catch(PDOException $e){
         if($e->errorInfo[1] == 1062) {
-            header("Location: ../../../add-client.php?status=duplicate");
+            header("Location: ../../add-client.php?status=duplicate");
         } else {
             error_log("Erro DB: " . $e->getMessage());
-            header("Location: ../../../add-client.php?status=error");
+            header("Location: ../../add-client.php?status=error");
         }
         exit();
     }
 } else {
-    header("Location: ../../../add-client.php");
+    header("Location: ../../add-client.php");
     exit();
 }
 
