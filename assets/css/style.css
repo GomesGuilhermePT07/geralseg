@@ -28,6 +28,8 @@
 }
 
 .inputs{
+    font-size: 1.3rem;
+    letter-spacing: 2px;
     padding: 12px;
     border-radius: 10px;
     color: var(--color-black);
