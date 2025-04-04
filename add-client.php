@@ -41,7 +41,7 @@
         <input type="text" id="sistema" name="sistema" class="inputs" placeholder="Sistema" required>
         <div class="dropbox">
             <select name="estado" id="estado" class="inputs" required>
-                <option value="" disabled selected>Seleciona o estado</option>
+                <option value="" disabled selected>Selecione o estado</option>
                 <option value="adjudicado">Adjudicado</option>
                 <option value="perdido">Perdido</option>
                 <option value="anulado">Anulado</option>
