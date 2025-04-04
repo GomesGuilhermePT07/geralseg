@@ -46,5 +46,3 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     header("Location: ../../add-client.php");
     exit();
 }
-
-?>
